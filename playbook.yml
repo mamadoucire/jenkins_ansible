@@ -1,7 +1,6 @@
 ---
-- hosts: linux
+- hosts: all
   become: yes
-  remote_user: mdiane
   become_user: root
   
   tasks:
