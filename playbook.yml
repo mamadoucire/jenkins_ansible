@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  remote_user: mdiane
+  become_user: root
+  
+  tasks:
+  - name: install htop
+    apt:
+      name: htop
+      state: latest
