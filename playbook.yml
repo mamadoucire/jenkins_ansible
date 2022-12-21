@@ -1,10 +1,9 @@
 ---
 - hosts: all
   become: yes
-  become_user: root
   
   tasks:
   - name: install htop
-    apt:
+    yum:
       name: htop
       state: latest
